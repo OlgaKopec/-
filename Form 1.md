@@ -1,34 +1,34 @@
 # -
 Приложения для оценки влияния дивидендной политики на капитализацию компаний
 
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.Data;
+    using System.Data.SqlClient;
+    using System.Drawing;
+    using System.IO;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+    using System.Windows.Forms;
 
-namespace WindowsFormsApp7
-{
+    namespace WindowsFormsApp7
+    {
     public partial class Form1 : Form
     {
         public Form1()
         {
-            InitializeComponent();
-            
+            InitializeComponent();  
     }
+    
        public bool UpdateInForm = false;
         int a = 2009;
         int z = 0;
         private void button1_Click(object sender, EventArgs e)
         {
             dataGridView1.RowCount = 10;
-
+            
             double AD = Convert.ToDouble(textBox1.Text);
             double N = Convert.ToDouble(textBox3.Text);
             double Po = Convert.ToDouble(textBox4.Text);
